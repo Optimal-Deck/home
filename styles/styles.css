@@ -7,7 +7,7 @@ body {
   background: linear-gradient(135deg, #073254, #00162C, #000000);
   background-attachment: fixed;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family:  Geist Mono;
 }
 
 header {
@@ -38,7 +38,7 @@ nav {
 nav a {
     text-decoration: none;
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
     transition: 0.3s ease;
 }
 
@@ -55,8 +55,141 @@ button {
     cursor: pointer;
     font-weight: 600;
     margin: 12px;
+    font-family:  Geist Mono;
 }
 
 button:hover {
     background-color: #0000006a;
+
+}
+
+.contPrincipal {
+    display: flex;
+    background-color: #d9d9d929;
+    margin: 62px auto 0 auto;
+    border-radius: 10px;
+    width: 70%;
+    height: 620px;
+    align-items: flex-end;
+}
+
+.textoBanner {
+    flex: 1;
+    margin: 60px;
+    font-size: 30px;
+    align-self: center;
+}
+
+.textoBanner p {
+        padding-top: 20px;
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+.imagBanner {
+  flex: 1;
+  text-align: right;
+}
+
+.imagBanner img {
+    width: 600px;
+    height: auto;
+}
+
+.hero{
+    background-color: #526A80;
+    height: 60px;
+    width: 260px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.section2 {
+    padding-bottom: 10px;
+    margin: 62px auto 0 auto;
+    width: 70%;
+    p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+.section2 h2 {
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+.services  {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.services-1, .services-2, .services-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d9d9d929;
+    margin: 20px auto 0 auto;
+    width: 70%;
+    border-radius:10px;
+    height: 210px;
+    padding: 30px 60px;
+    font-size: 20px;
+    gap: 40px;
+    h2 {
+        font-weight: 500;
+    }
+    p {
+        font-size: 15px;
+        padding-top: 20px;
+    }
+}
+
+.herramientas {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 40px auto;
+    gap: 30px;
+}
+
+.tarjeta {
+    background-color: #d9d9d929;
+    border-radius: 10px;
+    width: 30%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 30px 20px;
+    
+}.tarjeta img {
+    margin-top: 40px;
+    width: 180px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.tarjeta h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.tarjeta p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.proximamente {
+    margin-top: 60px;
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: inline-block;
 }
