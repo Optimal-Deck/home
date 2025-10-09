@@ -3,11 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 body {
   background: linear-gradient(135deg, #073254, #00162C, #000000);
   background-attachment: fixed;
   color: #fff;
   font-family:  Geist Mono;
+  line-height: 1.5;
 }
 
 header {
@@ -30,19 +38,19 @@ header {
     height: auto;
 }
 
-nav {
+.mainMenu {
     display: flex;
     gap: 80px;
     align-items: center;
 }
-nav a {
+.mainMenu a {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
     transition: 0.3s ease;
 }
 
-nav a:hover {
+.mainMenu a:hover {
     color: #00000078;
 }
 
@@ -192,4 +200,94 @@ button:hover {
     font-weight: 600;
     margin-bottom: 20px;
     display: inline-block;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #d9d9d918; 
+    padding: 40px 0 20px 0; 
+    margin-top: 70px;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 55px; 
+}
+
+.footer-columna h4 {
+    font-size: 20px;
+    font-weight: 700; 
+    margin-bottom: 20px;
+}
+
+.footer-branding p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.footer-logo img {
+    max-width: 120px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-nav a, .footer-contacto p, .footer-contacto a {
+    color: #b0b0b0; 
+    text-decoration: none; 
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover, .footer-contacto a:hover {
+    color: #ffffff;
+}
+
+
+
+.footer-copyright-contenedor {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+}
+
+ hr {
+    border: none;
+    height: 1px;
+    background-color: #ffffff; 
+    margin: 20px 0;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .footer-contenido {
+        grid-template-columns: repeat(3, 1fr); 
+    }    
+}
+
+
+@media (max-width: 768px) {
+    .footer-contenido {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+        text-align: start;
+        justify-items: left;
+        padding-left: 100px;
+    }
 }
