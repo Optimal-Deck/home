@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@ header {
     
 }
 
-.head-center {
+.header {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -41,11 +42,16 @@ header {
     height: auto;
 }
 
+.menuIcon{
+    display: none;
+}
+
 .mainMenu {
     display: flex;
-    gap: 80px;
+    gap: 50px;
     align-items: center;
 }
+
 .mainMenu a {
     text-decoration: none;
     color: #fff;
@@ -57,17 +63,38 @@ header {
     color: #00000078;
 }
 
-button {
-    background-color: #000000;
-    color: white;
-    border: none;
-    padding: 2px 30px;
-    border-radius: 30px;
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mainMenu {
+    flex-direction: column;
+    margin: 50px;
+    gap: 70px;
+  }
+
+  #contactoHeaderBtn{
+    display: none;
+  }
+
+  .helperMediaHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menuIcon{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
     cursor: pointer;
-    font-weight: 600;
-    margin: 12px;
-    font-family:  Geist Mono;
 }
+}
+
+
 .boton {
     display: flex;
     background-color: #000000;
@@ -81,15 +108,16 @@ button {
     font-family:  Geist Mono;
     text-decoration: none;
     align-items: center;
-    
 }
+
 .boton:hover{
     background-color: #00162C;
 }
+
 button:hover {
     background-color:#00162C;
-
 }
+
 
 .contPrincipal {
     display: flex;
