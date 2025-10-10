@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -65,9 +68,26 @@ button {
     margin: 12px;
     font-family:  Geist Mono;
 }
-
+.boton {
+    display: flex;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 2px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 12px;
+    font-family:  Geist Mono;
+    text-decoration: none;
+    align-items: center;
+    
+}
+.boton:hover{
+    background-color: #00162C;
+}
 button:hover {
-    background-color: #0000006a;
+    background-color:#00162C;
 
 }
 
@@ -103,14 +123,23 @@ button:hover {
     height: auto;
 }
 
-.hero{
-    background-color: #526A80;
+.hero {
+    background-color: #000000;
     height: 60px;
     width: 260px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
 }
-
+.hero:hover {
+    background-color:#00162C;
+    transition: 1s;
+}
 .section2 {
     padding-bottom: 10px;
     margin: 62px auto 0 auto;
@@ -290,4 +319,93 @@ footer {
         justify-items: left;
         padding-left: 100px;
     }
+}
+
+.formulario {
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.texto-central h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.texto-central p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #dcdcdc;
+}
+
+.contenedor-form {
+    background-color: #d9d9d929;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+form textarea {
+    resize: none;
+    overflow-y: auto;
+    
+
+}
+form input,
+form select,
+form textarea {
+    background-color: #ffffff15;
+    border: 1px solid #ffffff33;
+    border-radius: 10px;
+    padding: 12px 15px;
+    color: #fff;
+    font-family: "geist mono";
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #b0b0b0;
+}
+
+.form select {
+    color: #b0b0b0;
+    cursor: pointer;
+}
+
+form select option {
+    color: #000000;
+}
+
+.btn-enviar {
+    background-color: #000000;
+    border: none;
+    padding: 20px 50px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .contenedor-form {
+    width: 85%;
+    padding: 30px 20px;
+  }
+
+  .texto-central h1 {
+    font-size: 26px;
+  }
 }

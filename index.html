@@ -20,7 +20,8 @@
                 <a href="#Proyectos">Proyectos</a>
                 <a href="#Nosotros">Nosotros</a>
             </nav>
-            <button>Contactanos</button>
+            <a href="#contacto" class="boton">Contactanos</a>
+
         </div>
     </header>
 
@@ -31,7 +32,8 @@
                 reales.</h2>
                 <p>Acompañamos a pymes y emprendedores a transformar sus ideas en herramientas eficientes. 
                     Desarrollamos sitios web, Ecommerce y sistemas a medida para que tu empresa crezca.</p>
-                <button class="hero">Hablemos de tu proyecto</button>
+                
+                <a href="#contacto" class="hero">Hablemos de tu proyecto</a>
             </div>
             <div class="imagBanner">
                 <img src="img/hero.png" alt="Imagen persona con computadora">
@@ -91,6 +93,33 @@
             </div>
         </div>
     </section>
+    <section id="contacto" class="formulario">
+                <div class="texto-central">
+                    <h1>Cada idea es una oportunidad</h1>
+                    <p>Dejanos tu mensaje y nos contactaremos a la brevedad</p>
+                </div>
+                
+                <div class="contenedor-form">
+                    <form action="#" method="post">
+                        <input type="text" name="Nombre" placeholder="Nombre Completo" required>
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                        <input type="tel" name="Telefono" placeholder="Número de telefono (opcional)">
+
+                        <select name="motivio" required>
+                            <option value="" disabled selected>Selecciona el tipo de proyecto</option>
+                            <option value="Ecommerce">Ecommerce</option>
+                            <option value="Diseño web">Diseño web</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Diseño UX">Diseño UX/UI</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+
+                        <textarea name="mensaje" rows="5" placeholder="Contanos más sobre tu proyecto..."></textarea>
+                        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                    </form>
+
+                </div>    
+            </section>
 
     <footer>
     <div class="footer-contenido">
