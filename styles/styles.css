@@ -380,6 +380,7 @@ form select option {
   font-size: 1.6rem;
   font-family: "Geist Mono", monospace;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {

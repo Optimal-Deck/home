@@ -106,12 +106,12 @@
                     </div>
                     
                     <div class="contenedor-form">
-                        <form action="#" method="post">
-                            <input type="text" name="Nombre" placeholder="Nombre Completo" required>
-                            <input type="email" name="email" placeholder="Correo electrónico" required>
-                            <input type="tel" name="Telefono" placeholder="Número de telefono (opcional)">
+                        <form id="formularioContacto">
+                            <input type="text" name="Nombre" placeholder="Nombre Completo" id="nombre" required>
+                            <input type="email" name="email" placeholder="Correo electrónico" id="email" required>
+                            <input type="tel" name="Telefono" placeholder="Número de telefono (opcional)" id="telefono">
 
-                            <select name="motivio" required>
+                            <select name="motivo" id="tipoProyecto" required>
                                 <option value="" disabled selected>Selecciona el tipo de proyecto</option>
                                 <option value="Ecommerce">Ecommerce</option>
                                 <option value="Diseño web">Diseño web</option>
@@ -120,9 +120,11 @@
                                 <option value="Otro">Otro</option>
                             </select>
 
-                            <textarea name="mensaje" rows="5" placeholder="Contanos más sobre tu proyecto..."></textarea>
+                            <textarea name="mensaje" id="mensaje" rows="5" placeholder="Contanos más sobre tu proyecto..."></textarea>
                             <button type="submit" class="btn-enviar">Enviar mensaje</button>
                         </form>
+
+                        <div id="mensajeStatus"></div>
 
                     </div>    
                 </section>
@@ -185,7 +187,7 @@
         </div>
     </footer>
 
-<script src="js/app.js"></script>
+<script src="js/app.js" type="module"></script>
 </body>
 
 
