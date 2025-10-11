@@ -106,13 +106,13 @@ header {
 ========================= */
 
 .btn {
+  display: flex;
   align-items: center;
   background-color: #000;
   border: none;
   border-radius: 3rem;
   color: #fff;
   cursor: pointer;
-  display: flex;
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -124,11 +124,12 @@ header {
 }
 
 .heroBtn {
+  justify-content: center;
   font-size: 1.6rem;
   font-weight: 500;
-  margin-left: 1rem;
+  margin: 2rem auto 0;
   padding: 1.5rem 3rem;
-  width: 30rem;
+  width: 65%;
 }
 
 .boton:hover,
@@ -140,13 +141,16 @@ button:hover,
 /* =========================
    SECCIÓN PRINCIPAL (BANNER)
 ========================= */
+main {
+  text-align: center;
+}
 
 .contPrincipal {
+  display: flex;
   align-items: flex-end;
   background-color: #d9d9d929;
   border-radius: 1rem;
-  display: flex;
-  margin: 6rem auto 0;
+  margin: 10rem auto 0;
   width: 80%;
 }
 
@@ -154,7 +158,6 @@ button:hover,
   flex: 1;
   margin: 6rem;
   font-size: 2.3rem;
-  align-self: center;
 }
 
 .textoBanner p {
@@ -179,12 +182,18 @@ button:hover,
   }
 }
 
+@media (max-width: 678px) {
+    .heroBtn {
+      width: 90%;
+    }
+}
+
 /* =========================
    SECCIÓN 2 / SERVICES
 ========================= */
 
 .section2 {
-  margin: 6.2rem auto 0;
+  margin: 8rem auto 0;
   padding-bottom: 1rem;
   width: 80%;
 }
@@ -308,7 +317,7 @@ button:hover,
 
 .texto-central p {
   color: #dcdcdc;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .contenedor-form {
@@ -364,9 +373,13 @@ form select option {
 
 .btn-enviar {
   background-color: #000;
+  color: #b0b0b0;
   border: none;
+  border-radius: 2rem;
   margin-top: 2rem;
   padding: 2rem 5rem;
+  font-weight: 700;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 768px) {
@@ -395,7 +408,7 @@ footer {
   gap: 5.5rem;
   grid-template-columns: repeat(5, 1fr);
   margin: 0 auto;
-  max-width: 120rem;
+  width: 85%;
   padding: 0 2rem;
 }
 
@@ -406,7 +419,7 @@ footer {
 }
 
 .footer-logo img {
-  max-width: 12rem;
+  max-width: 16rem;
 }
 
 .footer-branding p {
@@ -462,9 +475,13 @@ hr {
 @media (max-width: 768px) {
   .footer-contenido {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 4rem;
     justify-items: left;
     padding-left: 10rem;
     text-align: start;
   }
+
+  .footer-logo img {
+  margin: 1rem auto;
+}
 }
