@@ -360,7 +360,7 @@ form textarea {
   overflow-y: auto;
 }
 
-.form select {
+form select {
   color: #b0b0b0;
   cursor: pointer;
 }
@@ -371,13 +371,15 @@ form select option {
 
 .btn-enviar {
   background-color: #000;
-  color: #b0b0b0;
+  color: #fff;
   border: none;
   border-radius: 2rem;
   margin-top: 2rem;
   padding: 2rem 5rem;
   font-weight: 700;
   font-size: 1.6rem;
+  font-family: "Geist Mono", monospace;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
