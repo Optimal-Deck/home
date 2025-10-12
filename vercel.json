@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/light", "destination": "/light/index.html" },
+    { "source": "/light/(.*)", "destination": "/light/$1" }
+  ]
+}
