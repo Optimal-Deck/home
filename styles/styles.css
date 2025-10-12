@@ -466,7 +466,85 @@ hr {
   font-size: 1.4rem;
   text-align: center;
 }
+/*pagina 2 contacto*/
+.section-Nosotros {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background-color: #d9d9d929;
+  border-radius: 1rem;
+  margin: 10rem auto 0;
+  width: 50%;
+  height: 300px;
+  align-items: center;
+}
+.texto-banner {
+  padding: 30px 30px;
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+.Negrita {
+  background-color: #000;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.img-nosotros {
+  position: absolute;
+  top: 230px;               /* Cuánto sobresale la imagen (ajustá a gusto) */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;             /* Ajustá según el tamaño de tu imagen */
+  height: auto;
+  z-index: 2;
+}
 
+.mensaje {
+ 
+  display: flex;
+  align-items: flex-end;
+  background-color: none;
+  padding-top: 300px;
+  margin: 10rem auto 0;
+  width: 70%;
+  height: 345px;
+  align-items: center;
+  h3 { 
+    font-size: 28px;
+    padding-top: 100px;
+    font-weight: 300;
+  }
+  span {
+    background-color: #F2AC53;
+    color: #000;
+    font-weight: 600;
+  }
+}
+
+.mensaje2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  width: 70%;
+  padding: 22rem 0;
+  margin: 5rem auto;
+}
+
+.mensaje2 .mensaje {
+  flex: 1;
+  padding: 0;
+  height: auto;
+}
+
+.mensaje2 img {
+  flex: 0 0 300px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  padding-top: 80px;
+}
 @media (max-width: 1024px) {
   .footer-contenido {
     grid-template-columns: repeat(3, 1fr);
