@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Optimal Deck</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="helperMediaHeader">
+                <a class="logo" href="#">
+                    <img src="img/logo.png" alt="Logo de Optimal Deck">
+                </a>
+                
+                <p class="menuIcon" id="menuToggle">☰</p>
+            </div>
+            
+
+            <nav class="mainMenu" id="mainMenu">
+                <a href="index.html">Inicio</a>
+                <a href="#Proyectos">Proyectos</a>
+                <a href="Nosotros.html">Sobre nosotros</a>
+            </nav>
+
+            <a href="#contacto" class="btn" id="contactoHeaderBtn">Contactanos</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="contPrincipal">
+            <div class="textoBanner">
+                <h2>Impulsamos tu negocio con soluciones
+                reales.</h2>
+                <p >Acompañamos a pymes y emprendedores a transformar sus ideas en herramientas eficientes. 
+                    Desarrollamos sitios web, Ecommerce y sistemas a medida para que tu empresa crezca.</p>
+                
+                <a href="#contacto" class="heroBtn btn">Hablemos de tu proyecto</a>
+            </div>
+            <div class="imgBanner">
+                <img src="img/hero.png" alt="Imagen persona con computadora">
+            </div>
+
+        </section>
+
+        <section>
+            <div class="section2">
+                <h2>Nuestros Servicios</h2>
+                <p>Soluciones diseñadas para impulsar tu negocio.</p>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <div>
+                        <h3>Desarrollo de Sitios Web</h3>
+                        <p>Potenciá tu marca con una página profesional que refleje la esencia de tu negocio. Creamos sitios web modernos, rápidos y seguros para que tengas una presencia online sólida y efectiva.</p>
+                    </div>
+                    <img src="img/desarrollo-web.png" alt="desarrollo web">
+                </div>    
+                <div class="service">
+                    <div>
+                        <h3>Creación de tu Ecommerce</h3>
+                        <p>Llevá tu negocio al siguiente nivel con una tienda online personalizada. Trabajamos con plataformas como WooCommerce, Tienda Nube y Empretienda para que puedas vender fácil, rápido y sin complicaciones.</p>
+                    </div>
+                    <img src="img/ecommerce.png" alt="ecommerce">
+                </div>
+                <div class="service">
+                    <div>
+                        <h3>Marketing y Optimización</h3>
+                        <p>Te ayudamos a llegar a más personas y a destacar frente a tu competencia. Optimizamos tu presencia en buscadores con estrategias de SEO y campañas SEM que atraen clientes reales.</p>
+                    </div>
+                    <img src="img/marketing.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section2">
+                <h2>Herramientas gratuitas</h2>
+                <p>Pequeñas utilidades, grandes resultados.</p>
+            </div>
+            <div class="herramientas">
+                <a class="tarjeta" href="./light/index.html" target="_blank" rel="noopener noreferrer">
+                    <img src="img/light.png" alt="Logo Light">
+                    <h4>Conversor de imágenes a WebP</h4>
+                    <p>Reducí el peso de tus imágenes y optimizá tu sitio en segundos.</p>
+                </a>
+                <div class="tarjeta">
+                    <span class="proximamente">Próximamente</span>
+                    <h4>Conversor a formato .ico</h4>
+                    <p>Convertí tus imágenes y dale identidad a tus pestañas.</p>
+                </div>
+                <div class="tarjeta">
+                    <span class="proximamente">Próximamente</span>
+                    <h4>Generador de tarjetas interactivas</h4>
+                    <p>Subí un video y creá test para reforzar tu aprendizaje.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="formulario">
+                    <div class="texto-central">
+                        <h1>Cada idea es una oportunidad</h1>
+                        <p>Dejanos tu mensaje y nos contactaremos a la brevedad</p>
+                    </div>
+                    
+                    <div class="contenedor-form">
+                        <form id="formularioContacto">
+                            <input type="text" name="Nombre" placeholder="Nombre Completo" id="nombre" required>
+                            <input type="email" name="email" placeholder="Correo electrónico" id="email" required>
+                            <input type="tel" name="Telefono" placeholder="Número de telefono (opcional)" id="telefono">
+
+                            <select name="motivo" id="tipoProyecto" required>
+                                <option value="" disabled selected>Selecciona el tipo de proyecto</option>
+                                <option value="Ecommerce">Ecommerce</option>
+                                <option value="Diseño web">Diseño web</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Diseño UX">Diseño UX/UI</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+
+                            <textarea name="mensaje" id="mensaje" rows="5" placeholder="Contanos más sobre tu proyecto..."></textarea>
+                            <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                        </form>
+
+                        <div id="mensajeStatus"></div>
+
+                    </div>    
+                </section>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+        
+            <div class="footer-columna footer-branding">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Logo de Optimal Deck">
+                </div>
+                <p>Cada proyecto, una oportunidad para despegar.</p>
+            </div>
+            
+            <div class="footer-columna">
+                <h4>Sitio</h4>
+                <nav class="footer-nav">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </div>
+            
+            <div class="footer-columna">
+                <h4>Sobre nosotros</h4>
+                <nav class="footer-nav">
+                    <a href="#">Nuestro comienzo</a>
+                    <a href="#">Misión y visión</a>
+                </nav>
+            </div>
+            
+            <div class="footer-columna">
+                <h4>Nuestros espacios</h4>
+                <nav class="footer-nav">
+                    <a href="https://facebook.com">Facebook</a>
+                    <a href="https://instagram.com">Instagram</a>
+                    <a href="https://linkedin.com">LinkedIn</a>
+                </nav>
+            </div>
+            
+            <div class="footer-columna footer-contacto">
+                <h4>Contacto</h4>
+                <p>Av gral paz 777 - b° Centro</p>
+                <p>Córdoba, Argentina</p>
+                <br>
+                <p>+54 - 3512347777</p>
+                <p><a href="mailto:contacto@optimaldeck.com">contacto@optimaldeck.com</a></p>
+            </div> 
+        </div>
+
+    <hr>
+
+        <div class="footer-copyright-contenedor">
+            <p class="footer-copyright">
+                © 2025 Optimal Deck. Todos los derechos reservados.
+                <br>
+                Creado con 💻 y ☕ desde Córdoba, Argentina.
+            </p>
+        </div>
+    </footer>
+
+<script src="js/app.js" type="module"></script>
+</body>
+
+
+</html>
