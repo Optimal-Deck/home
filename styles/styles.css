@@ -263,6 +263,8 @@ button:hover,
 }
 
 .tarjeta {
+  color: #fff;
+  text-decoration: none;
   background-color: #d9d9d929;
   border-radius: 1rem;
   display: flex;
