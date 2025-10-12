@@ -1,0 +1,405 @@
+/* ==============================
+   Variables
+============================== */
+:root {
+  --primary-color: #0b0b0b;
+  --primary-color-dark: #343738;
+  --secondary-color: #e0f2fe;
+  --text-color: #333;
+  --text-subtitle: #444;
+  --text-muted: #777;
+  --border-color: #eee;
+  --radius: 0.8rem; /* 8px */
+  --transition-fast: 0.2s;
+  --transition-medium: 0.3s;
+  --transition-slow: 0.4s;
+}
+
+/* ==============================
+   Base
+============================== */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  height: 100%;            
+  margin: 0;    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  height: 100%;            
+  margin: 0;
+  display: flex;
+  flex-direction: column;   /* Columna: header → main → footer */
+  min-height: 100vh;   
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  margin: auto;
+}
+
+/* ==============================
+   Header
+============================== */
+.header {
+  padding: 2rem 0;
+  border-bottom: 0.2rem solid var(--border-color);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 14rem;
+  height: auto;
+  display: block;
+}
+
+/* ==============================
+   Hero
+============================== */
+.hero {
+  padding: 6rem 1rem 4rem;
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: .8rem 1.8rem;
+  border-radius: 20rem;
+  font-size: 1.4rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin: 1.4rem 0;
+}
+
+
+.hero-subtitle {
+  font-size: 1.6rem;
+  color: var(--text-subtitle);
+  max-width: 60rem; /* 600px */
+  margin: 0 auto 2rem;
+}
+
+/* ==============================
+   Dropzone
+============================== */
+.dropzone {
+  border: 0.2rem dashed #ccc;
+  padding: 4rem;
+  border-radius: var(--radius);
+  margin: 3rem 0;
+  cursor: pointer;
+  transition: background-color var(--transition-medium), border-color var(--transition-medium);
+  font-size: 1.4rem;
+}
+
+.dropzone.dragover {
+  background-color: #eef;
+  border-color: var(--primary-color);
+}
+
+/* ==============================
+   Preview
+============================== */
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.preview-item {
+  text-align: center;
+  width: 20rem; 
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.preview-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.preview-item img {
+  max-height: 15rem;
+  max-width: 90%; 
+  display: block;
+  margin: 0 auto 0.5rem auto;
+}
+
+.preview-name {
+  font-size: 1.2rem;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+/* ==============================
+   Buttons
+============================== */
+.btn {
+  padding: 1.8rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 1.9rem;
+  transition: filter var(--transition-medium), transform var(--transition-fast);
+}
+
+.btn:hover {
+  filter: brightness(90%);
+  transform: scale(1.03);
+}
+
+.btn.primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn.outline {
+  border: 0.2rem solid var(--primary-color);
+  background: #fff;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.downloadBtn {
+  margin: 1.6rem 0;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+}
+
+/* ==============================
+   Donar
+============================== */
+.btn-donar {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 1.4rem 2.0rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-size: 1.9rem;
+  transition: background var(--transition-medium), transform var(--transition-fast);
+}
+
+.btn-donar:hover {
+  background: var(--primary-color-dark);
+  transform: scale(1.05);
+}
+
+/* ==============================
+   Sections
+============================== */
+
+.advantages {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9; /* fondo suave */
+  text-align: center;
+
+}
+
+.advantages h3 {
+  margin-bottom: 3rem;
+  font-size: 2.1rem;
+  color: #1c1313;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border: .1rem dashed #030303;
+  border-radius: 1.2rem;
+  padding: 5rem;
+  font-size: 1.8rem;
+  color: #333;
+  box-shadow: 0 .4rem .6rem rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;   /* ícono arriba, texto debajo */
+  align-items: center;      /* centra horizontal */
+  text-align: center;       /* centra texto */
+}
+
+.card .icon {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1.7rem; 
+  color: inherit; /* color inicial del icono */
+  transition: color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-.5rem);
+  box-shadow: 0 .8rem 1.2rem rgba(0,0,0,0.15);
+  background: #000;    /* fondo negro */
+  color: #fff;         /* texto e íconos en blanco */
+  border-color: #fff;  /* borde blanco */
+}
+
+
+ 
+.donation .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+
+}
+.donation h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+} 
+.donation p {
+  text-align: center;
+  margin-top: .6rem;
+  margin-bottom: 2rem;
+}
+
+.donation .buttons {
+  padding-bottom: 2.5rem;
+}
+/* ==============================
+   Footer
+============================== */
+.footer {
+  border-top: 0.2rem solid var(--border-color);
+  border-bottom: 0.5rem;
+  padding: 1.5rem 0;
+  font-size: 1.4rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ==============================
+   Responsive
+============================== */
+@media (min-width: 768px) {
+  .hero-title { font-size: 3.5rem; }
+  .hero-subtitle { font-size: 1.6rem; }
+  .preview-container { flex-direction: row; justify-content: space-evenly; gap: 2rem; }
+}
+
+/* ==============================
+   Helpers 
+============================== */
+.hidden { display: none; }
+.padding-preview{ padding: 6.5rem 0; }
+
+/* ==============================
+   Spinner
+============================== */
+.spinner {
+  border: 0.8rem solid #f3f3f3; 
+  border-top: 0.8rem solid var(--primary-color); 
+  border-radius: 50%;
+  width: 6rem; 
+  height: 6rem;
+  animation: spin 1s linear infinite;
+  margin: 5rem auto;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Fade-in previews */
+.preview-item {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.preview-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.donaciones {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.donaciones h2 {
+  font-size: 3.4rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.donaciones .intro {
+  font-size: 2.2rem;
+  color: #030303;
+  margin-bottom: 4rem;
+}
+
+.card-donacion {
+  background: #fff;
+  border: .1rem dashed #030303;
+  border-radius: 1.2rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #444;
+  box-shadow: 0 .4rem .6rem rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease, border 0.3s ease;
+  text-decoration: none; 
+}
+
+.card-donacion:hover {
+  transform: translateY(-.5rem);
+  background: #000;
+  color: #fff;
+  border: .1rem solid #fff;
+  box-shadow: 0 .8rem 1.2rem rgba(0,0,0,0.15);
+}
+.icono-donacion {
+  width: 11rem;   
+  height: auto;
+  margin-bottom: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

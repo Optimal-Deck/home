@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu imagen a Webp | Light</title>
+  <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html">
+      <img src="assets/light logo.png" alt="light" class="logo"></a> 
+       <a href="donaciones.html" class="btn-donar">Donar ❤️</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container text-center">
+      
+      <div id="converterDiv">
+        <h1 class="hero-title">Convierte tus imágenes a WebP</h1>
+        <p class="hero-subtitle">
+          Reduce el tamaño de tus imágenes sin perder calidad. <br>
+          Perfecto para optimizar tu sitio web y mejorar la velocidad de carga.
+        </p>
+        <span class="tag">✨ Gratis y sin límites*</span>
+
+        <div class="dropzone" id="dropzone">
+          Arrastra hasta 3 imágenes o haz clic para seleccionarlas
+        </div>
+  
+        <button class="btn primary" id="convertBtn" type="button">Convertir a WebP ⬇</button>
+        <p class="info"><span id="image-count">0</span> de 3 imágenes seleccionadas</p>
+    </div>
+
+    <div id="progressContainer" class="hidden">
+      <div id="progressBar"></div>
+    </div>
+
+     <div id="previewContainer" class="preview-container"></div>
+        
+        <a id="downloadLink" class="btn outline" style="display:none;">Descargar</a>
+        <input type="file" id="fileInput" accept="image/*" style="display:none">
+    </div>
+
+    <button id="convertMoreBtn" class="btn primary hidden">Convertir más imágenes</button>
+  </section>
+
+  <!-- Ventajas WebP -->
+  <section class="advantages">
+    <div class="container">
+      <h3>Ventajas de convertir tus imagenes en formato WebP</h3>
+      <div class="cards">
+        <div class="card">
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-feather"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9.585v6.415h6.414l-2.707 2.707a1 1 0 0 1 -.112 .097l-.11 .071l-.114 .054l-.105 .035l-.149 .03l-.117 .006h-4.586l-1.707 1.707a1 1 0 1 1 -1.414 -1.414l1.707 -1.709v-4.584l.003 -.075l.017 -.126l.03 -.111l.044 -.111l.052 -.098l.067 -.096l.08 -.09z" /><path d="M19.414 11l-3 3h-4.914l2.914 -3z" /><path d="M13 4.586v4.998l-3 3v-4.999z" /><path d="M16.482 3a4.515 4.515 0 0 1 4.518 4.514a4.7 4.7 0 0 1 -.239 1.487l-5.761 -.001v-5.76c.469 -.158 .968 -.24 1.482 -.24" /></svg>
+          <p>Archivos hasta 80% más livianos</p></div>
+        <div class="card">
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-photo-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 8h.01" /><path d="M11.5 21h-5.5a3 3 0 0 1 -3 -3v-12a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v7" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l4 4" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l.5 .5" /><path d="M15 19l2 2l4 -4" /></svg>
+          <p></p>Imágenes de alta calidad sin perder detalle</p></div>
+        <div class="card"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rocket"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+          <p>Favorece tu SEO al mejorar la velocidad de carga</p></div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Donaciones -->
+  <section class="donation">
+    <div class="container text-center">
+      <h3>¿Te ha sido útil esta herramienta?</h3>
+      <p>
+        Esta aplicación es completamente gratuita y de código abierto.  
+        Si te ha ayudado, considera hacer una donación para mantener el proyecto funcionando.
+      </p>
+      <div class="buttons">
+        <a href="donaciones.html"><button class="btn primary">Hacer una donación ❤️ </button></a>
+        <a href="https://github.com/Corval-LC/light"><button class="btn outline">Ver en GitHub</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>© 2024 Light x <strong>Optimal Log.</strong> Hecho con ❤️para la comunidad.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
