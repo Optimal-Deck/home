@@ -1,7 +1,7 @@
 // contact-form.js
 import { DOM } from './dom-utils.js';
 
-const API_URL = "http://localhost:3000/api/contact";
+const API_URL = "https://optimaldeck-backend.onrender.com/api/contact";
 const infoContacto = {
     nombre: "",
     email: "",
