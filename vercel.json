@@ -1,6 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/light", "destination": "https://light-zeta-five.vercel.app/" },
-    { "source": "/light/(.*)", "destination": "https://light-zeta-five.vercel.app/public/$1" }
-  ]
-}
