@@ -403,3 +403,49 @@ main {
   margin-right: auto;
 }
 
+/* ==============================
+   FAQ (Preguntas Frecuentes)
+============================== */
+.faq-section {
+  padding: 4rem 2rem;
+  background-color: #fff; /* O usa #f9f9f9 si prefieres el fondo de .advantages */
+}
+
+/* Hacemos el contenedor de las FAQ más angosto 
+  para que sea más fácil de leer que el .container normal 
+*/
+.faq-section .container {
+  max-width: 80rem; /* 800px */
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+  color: var(--primary-color-dark);
+}
+
+.faq-item {
+  border-bottom: 0.1rem solid var(--border-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.faq-question {
+  font-weight: 600;
+  font-size: 1.8rem; /* Un poco más grande que el texto base */
+  color: var(--text-color);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.faq-question:hover {
+  color: var(--primary-color);
+}
+
+.faq-answer {
+  padding-top: 1.5rem;
+  line-height: 1.7; /* Más espaciado para lectura */
+  color: var(--text-muted);
+}
+
