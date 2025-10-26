@@ -695,3 +695,50 @@ hr {
   border-left: 3px solid #f2ac53;
   padding-left: 1rem;
 }
+
+.encabezado-proyecto {
+  background-color: #d9d9d929; /* Color suave similar al resto del sitio */
+  border-radius: 2rem;
+  width: 60%;
+  margin: 6rem auto;           /* Centrado en el medio del sitio */
+  height: 25rem;               /* Altura del rectángulo */
+  display: flex;
+  align-items: center;         /* Centra verticalmente el contenido */
+  justify-content: center;     /* Centra horizontalmente */
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.encabezado-proyecto h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.encabezado-proyecto img {
+  width: 28rem;   /* Ajustá según el tamaño del logo */
+  height: auto;
+  filter: brightness(95%);
+  margin: auto;
+  padding-bottom: 30px;
+  
+}
+
+@media (max-width: 768px) {
+  .encabezado-proyecto {
+    width: 85%;
+    height: auto;
+    padding: 4rem 2rem;
+  }
+
+  .encabezado-proyecto h1 {
+    font-size: 2.4rem;
+  }
+
+  .encabezado-proyecto img {
+    width: 10rem;
+  }
+}
+
