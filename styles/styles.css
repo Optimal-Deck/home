@@ -609,3 +609,136 @@ hr {
     margin-top: 3rem;
   }
 }
+
+.box-p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  width: 80%;
+  margin: 4rem auto;
+  padding-top: 55px;
+}
+
+.card-proyecto {
+  background-color: #d9d9d929;
+  border-radius: 1rem;
+  width: 28rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 0;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+    
+}
+
+.card-proyecto:hover {
+  transform: scale(1.04);
+  background-color: #d9d9d950;
+}
+
+.card-proyecto img {
+  width: 70%;
+  height: 10rem; 
+  object-fit: contain; 
+  margin-bottom: 2rem; 
+}
+
+
+.btn-proyecto {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-proyecto:hover {
+  background-color: #00162C;
+}
+
+.proyectos {
+  padding-top: 91px;
+  text-align: center;
+  
+}
+.faq {
+  width: 80%;
+  margin: 6rem auto;
+  text-align: left;
+}
+
+.faq h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.faq h3 {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  color: #f2ac53;
+}
+
+.faq p {
+  margin-top: 1rem;
+  line-height: 1.7;
+  color: #dcdcdc;
+  font-weight: 300;
+}
+.faq h3 {
+  border-left: 3px solid #f2ac53;
+  padding-left: 1rem;
+}
+
+.encabezado-proyecto {
+  background-color: #d9d9d929; /* Color suave similar al resto del sitio */
+  border-radius: 2rem;
+  width: 60%;
+  margin: 6rem auto;           /* Centrado en el medio del sitio */
+  height: 25rem;               /* Altura del rectángulo */
+  display: flex;
+  align-items: center;         /* Centra verticalmente el contenido */
+  justify-content: center;     /* Centra horizontalmente */
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.encabezado-proyecto h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.encabezado-proyecto img {
+  width: 28rem;   /* Ajustá según el tamaño del logo */
+  height: auto;
+  filter: brightness(95%);
+  margin: auto;
+  padding-bottom: 30px;
+  
+}
+
+@media (max-width: 768px) {
+  .encabezado-proyecto {
+    width: 85%;
+    height: auto;
+    padding: 4rem 2rem;
+  }
+
+  .encabezado-proyecto h1 {
+    font-size: 2.4rem;
+  }
+
+  .encabezado-proyecto img {
+    width: 10rem;
+  }
+}
+
