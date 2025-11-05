@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://optimaldeck.com/sitemap.xml
+Sitemap: https://www.optimaldeck.com/sitemap.xml
+
